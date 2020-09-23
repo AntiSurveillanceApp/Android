@@ -6,7 +6,7 @@ Clone repository and change directory to it
 
 ``` 
 git clone https://github.com/AntiSurveillanceApp/Android.git
-cd /app
+go to source
 ```
 
 Install nodemon
@@ -19,29 +19,7 @@ Install all dependencies needed
 npm install
 ```
 
-## Run the server
-This project needs nodemon to run and watch file changes. The command is:
-```
-nodemon Server.js
-```
-
-In case we need to run it as background service. Install and run:
-
-```
-npm install -g 
-forever start -c nodemon Server.js
-```
-
 ## Configruation
-You can find default config in `nodemon.json`. That's just simple:
-```
-{
-  "env" : {
-    "RUN_MODE"    : "dev",
-    "PORT"        : 4333
-  }
-}
-```
 Since the nodemon service could not watch itself config, you need to restart it.
 
 ## Run React Native
