@@ -5,8 +5,8 @@ You must have node installed: [Install NodeJS](https://nodejs.org/en/download/).
 Clone repository and change directory to it
 
 ``` 
-git clone https://github.com/viettranx/tracking-location-socketio.git 
-cd tracking-location-socketio/server
+git clone https://github.com/AntiSurveillanceApp/Android.git
+cd /app
 ```
 
 Install nodemon
