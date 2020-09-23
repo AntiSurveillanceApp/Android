@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.hack.antisurveillance.presentation.screens.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_locationPermissionsFragment"
+            app:destination="@id/locationPermissionsFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_micPermissionsFragment"
+            app:destination="@id/micPermissionsFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/locationPermissionsFragment"
+        android:name="com.hack.antisurveillance.presentation.screens.permissions.LocationPermissionsFragment"
+        android:label="LocationPermissionsFragment"
+        tools:layout="@layout/fragment_location_permissions">
+        <action
+            android:id="@+id/action_locationPermissionsFragment_to_micPermissionsFragment"
+            app:destination="@id/micPermissionsFragment" />
+        <action
+            android:id="@+id/action_locationPermissionsFragment_to_infoFragment"
+            app:destination="@id/infoFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/micPermissionsFragment"
+        android:name="com.hack.antisurveillance.presentation.screens.permissions.MicPermissionsFragment"
+        android:label="MicPermissionsFragment"
+        tools:layout="@layout/fragment_read_mic_permissions">
+        <action
+            android:id="@+id/action_micPermissionsFragment_to_pagerFragment"
+            app:destination="@id/pagerFragment" />
+        <action
+            android:id="@+id/action_micPermissionsFragment_to_infoFragment"
+            app:destination="@id/infoFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.hack.antisurveillance.presentation.screens.pager.PagerFragment"
+        android:label="PagerFragment"
+        tools:layout="@layout/fragment_pager" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.hack.antisurveillance.presentation.screens.info.InfoFragment"
+        android:label="InfoFragment"
+        tools:layout="@layout/fragment_info" />
+
+</navigation>

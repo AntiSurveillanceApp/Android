@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_background">#1B1B1B</color>
+    <color name="text_header">#DDDDDD</color>
+    <color name="list_text_color">#DDDDDD</color>
+    <color name="icon">#FFFFFF</color>
+    <color name="screen_background">#1B1B1B</color>
+    <color name="settings_item">#FFFFFF</color>
+</resources>

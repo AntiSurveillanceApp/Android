@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="topLeft" />
+    <item type="id" name="topRight" />
+    <item type="id" name="bottomLeft" />
+    <item type="id" name="bottomRight" />
+</resources>

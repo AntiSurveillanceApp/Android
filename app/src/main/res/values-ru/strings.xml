@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Antisurveillance 1.1.3</string>
+    <string name="step_1">ШАГ 1</string>
+    <string name="step_2">ШАГ 2</string>
+    <string name="accept_permission">Подтвердить</string>
+    <string name="mic_permissions_text">Подтвердить, для блокировки\nмикрофона</string>
+    <string name="gps_permissions_text">Подтвердить, для блокировки\nGPS</string>
+    <string name="details">Подробнее</string>
+
+    <string name="home_tab">Главная</string>
+    <string name="mic_tab">Mic</string>
+    <string name="geo_tab">Гео</string>
+    <string name="settings_tab">Настройки</string>
+
+    <string name="secure_startup">Безопасный запуск (эксперементально)</string>
+    <string name="root_access">Root доступ</string>
+    <string name="dark_theme">Тёмная тема</string>
+
+    <string name="russian_lang">Русский</string>
+    <string name="english_lang">Английский</string>
+    <string name="language">Язык</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ок</string>
+    <string name="mock_location">Блокировать передачу GPS</string>
+    <string name="clear_mock_location">Остановить блокировку GPS</string>
+    <string name="location_mocked">Локация подменена</string>
+    <string name="location_mock_cleared">Подмена локации подменена</string>
+    <string name="mic_state_locked">Микрофон заблокирован</string>
+    <string name="mic_state_unlocked">Микрофон разблокирован</string>
+
+    <string name="state_location_mocked">Статус подмены локации</string>
+    <string name="state_mic_blocked">Статус блокировки микрофона</string>
+    <string name="system_status">Системный статус</string>
+
+    <string name="permissions_denied">Permissions denied</string>
+    <string name="location_permissions_denied_message">You cannot continue work with this app without accepting of location permission. To accept permissions go in app settings</string>
+    <string name="permission_description">Описание разрешения</string>
+    <string name="gps_permission_description">Блокируйте отслеживание геолокации. Приложение которое ценит вашу свободу и право на частную жизнь, наш исходный код программы размещен на github. Вы можете подключить наш репозиторий для f-droid чтобы стабильно получать обновления.\nПриложение находится на стадии тестирования, поддерживаются не все модели смартфонов. Для корректной работы приложения вам необходимо подтвердить доступ к вашей геолокации для замены ее на фиктивную. Мы собираем полностью анонимную статистику чтобы добавлять все больше поддерживаемых устройств. Сторонние приложения любят собирать о вас личную информацию, смотрят куда вы ходите и слушают ваш микрофон чтобы предлагать вам контекстную рекламу и заведения рядом с теми местами где вы часто находитесь. Мы подготовили простое, бесплатное и эффективное решение благодаря которому вы в несколько простых шагов получите больше свободы в вашу частную жизнь, без регистрации и указания каких либо личных данных</string>
+    <string name="mic_permission_description">Блокируйте прослушку. Приложение которое ценит вашу свободу и право на частную жизнь, наш исходный код программы размещен на github. Вы можете подключить наш репозиторий для f-droid чтобы стабильно получать обновления.n\Приложение находится на стадии тестирования, поддерживаются не все модели смартфонов. Для корректной работы приложения вам необходимо подтвердить доступ к микрофону для его подавления в момент активации. Мы собираем полностью анонимную статистику чтобы добавлять все больше поддерживаемых устройств. Сторонние приложения любят собирать о вас личную информацию, смотрят куда вы ходите и слушают ваш микрофон чтобы предлагать вам контекстную рекламу и заведения рядом с теми местами где вы часто находитесь. Мы подготовили простое, бесплатное и эффективное решение благодаря которому вы в несколько простых шагов получите больше свободы в вашу частную жизнь без регистрации и указания каких либо личных данных</string>
+    <string name="record_audio_permissions_denied_message">You cannot continue work with this app without accepting of record audio permission. To accept permissions go in app settings</string>
+    <string name="service_channel_name">Processing location and mic locking</string>
+
+    <string name="enabled">Вкл</string>
+    <string name="disabled">Выкл</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_screen"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewPin"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:tint="@color/white"
+        android:translationX="-80dp"
+        app:layout_constraintBottom_toTopOf="@id/imageViewMic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pin" />
+
+    <View
+        android:id="@+id/viewLinePin"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:translationX="-110dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewPin"
+        app:layout_constraintStart_toEndOf="@id/imageViewPin"
+        app:layout_constraintTop_toTopOf="@id/imageViewPin" />
+
+    <View
+        android:id="@+id/viewPointPin"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/view_point"
+        android:translationX="-110dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewLinePin"
+        app:layout_constraintStart_toEndOf="@id/viewLinePin"
+        app:layout_constraintTop_toTopOf="@id/viewLinePin" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewGpsStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/disabled"
+        android:textAllCaps="true"
+        android:textColor="@color/settings_item"
+        android:textSize="18sp"
+        android:translationX="-100dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewPointPin"
+        app:layout_constraintStart_toEndOf="@id/viewPointPin"
+        app:layout_constraintTop_toTopOf="@id/viewPointPin" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMic"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:tint="@color/white"
+        android:translationX="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPin"
+        app:srcCompat="@drawable/ic_microphone" />
+
+    <View
+        android:id="@+id/viewLineMic"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:translationX="150dp"
+        android:translationY="-20dp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewMic"
+        app:layout_constraintEnd_toStartOf="@id/imageViewMic"
+        app:layout_constraintTop_toTopOf="@id/imageViewMic" />
+
+    <View
+        android:id="@+id/viewPointMic"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/view_point"
+        android:translationX="150dp"
+        android:translationY="-20dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewLineMic"
+        app:layout_constraintEnd_toStartOf="@id/viewLineMic"
+        app:layout_constraintTop_toTopOf="@id/viewLineMic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewMicStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/disabled"
+        android:textAllCaps="true"
+        android:textColor="@color/settings_item"
+        android:textSize="18sp"
+        android:translationX="140dp"
+        android:translationY="-20dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewPointMic"
+        app:layout_constraintEnd_toStartOf="@id/viewPointMic"
+        app:layout_constraintTop_toTopOf="@id/viewPointMic" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
